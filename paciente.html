@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Template UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/w3.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/w3-theme-indigo.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/awesome/all.css" />
+    
+    
+
+    <script src="static/js/zepto.js"></script>
+    <script src="static/js/utils.js"></script>
+</head>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Início</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Agenda</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Paciente</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button w3-hide-small w3-padding-large w3-hover-white">Financeiro</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button ">Contas à pagar</a>
+                    <a href="#" class="w3-bar-item w3-button">Contas à receber</a>
+                    <a href="#" class="w3-bar-item w3-button">Convênios</a>
+                    <a href="#" class="w3-bar-item w3-button">Planos de saúde</a>
+                </div>
+            </div>
+
+            <div class="w3-dropdown-hover">
+                <button class="w3-button w3-hide-small w3-padding-large w3-hover-white">Manutenção</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button ">Avisos</a>
+                    <a href="#" class="w3-bar-item w3-button">Sede</a>
+                    <a href="#" class="w3-bar-item w3-button">Sala</a>
+                    <a href="#" class="w3-bar-item w3-button">Serviço</a>
+                    <a href="#" class="w3-bar-item w3-button">Plano de saúde</a>
+                    <a href="#" class="w3-bar-item w3-button">Tipo de documento</a>
+                    <a href="#" class="w3-bar-item w3-button">Profissional</a>
+                    <a href="#" class="w3-bar-item w3-button">Agenda</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Relatórios</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right">Sair</a>
+        </div>
+    </div>
+    <header class="w3-container w3-padding-64 w3-theme-l1">
+        <h3>Cadastro de Paciente</h3>
+    </header>
+    <div class="w3-display-middle" style="width:80%">
+
+            <div class="w3-container ">
+                <div class="w3-card-4">
+                    <div class="w3-container w3-theme">
+                        <h2 class="w3-middle-align">Dados do paciente</h2>
+                    </div>
+    
+                    <form class="w3-container">
+                            <div class="w3-row-padding w3-padding-16">
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="Nome">
+                                </div>
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="Sobrenome">
+                                </div>
+                            </div>
+                            <div class="w3-row-padding">
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="CPF">
+                                </div>
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border" type="text" placeholder="Identidade">
+                                </div>
+                            </div>
+                            <div class="w3-row-padding">
+                                <button class="w3-button  w3-section w3-theme w3-ripple " disabled> Novo </button>
+                                <button class="w3-button  w3-section w3-theme w3-ripple"> Pesquisar </button>
+                            </div>
+                    </form>
+                </div>
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+                        <!-- <span onclick="document.getElementById('id01').style.display='none'"  -->
+                        <p>Teste bla bla</p>
+                        <p>Teste bla bla</p>
+                        <p>Teste bla bla</p>
+                    </div>
+                </div>
+                <hr>
+                <table class="w3-table w3-striped">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>CPF</th>
+                        <th>RG</th>
+                        <th>Ação</th>
+                    </tr>
+                    <tr>
+                        <td>Bianca</td>
+                        <td>DArmas Ferraz</td>
+                        <td>01234567891</td>
+                        <td>01234567891</td>
+                        <td><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-theme w3-ripple"> carregar </button></td>
+                    </tr>
+                    <tr>
+                        <td>João Gabriel</td>
+                        <td>Ferraz Gomes</td>
+                        <td>01234567891</td>
+                        <td>01234567891</td>
+                        <td><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-theme w3-ripple"> carregar </button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-display-bottommiddle">
+        <p>&copy DArmas Web v-1.0.0</p>
+        <p>Desenvolvido por <a href="https://gomes-fdr.github.io/" target="_blank">fabiano</a></p>
+    </footer>
+</body>
+
+</html>
